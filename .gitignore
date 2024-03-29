@@ -117,3 +117,5 @@ work_dirs/
 #*.pth
 #*.py~
 #*.sh~
+/coco/train2020/
+/coco/val2020/
