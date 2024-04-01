@@ -16,3 +16,4 @@ torchmetrics
 torchvision==0.13.0+cu116
 torchaudio==0.12.0
 tqdm
+imagesize
