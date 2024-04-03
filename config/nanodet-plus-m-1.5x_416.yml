@@ -63,8 +63,8 @@ model:
 data:
   train:
     name: coco
-    img_path: coco/train2020
-    ann_path: coco/annotations/instances_train2020.json
+    img_path: coco/train
+    ann_path: coco/annotations/instances_train.json
     input_size: [416,416] #[w,h]
     keep_ratio: False
     pipeline:
@@ -81,8 +81,8 @@ data:
       normalize: [[103.53, 116.28, 123.675], [57.375, 57.12, 58.395]]
   val:
     name: coco
-    img_path: coco/val2020
-    ann_path: coco/annotations/instances_val2020.json
+    img_path: coco/val
+    ann_path: coco/annotations/instances_val.json
     input_size: [416,416] #[w,h]
     keep_ratio: False
     pipeline:
