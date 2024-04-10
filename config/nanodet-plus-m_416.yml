@@ -103,17 +103,17 @@ schedule:
     name: linear
     steps: 500
     ratio: 0.0001
-  total_epochs: 300
+  total_epochs: 100
   lr_schedule:
     name: CosineAnnealingLR
     T_max: 300
     eta_min: 0.00005
-  val_intervals: 10
+  val_intervals: 5
 grad_clip: 35
 evaluator:
   name: CocoDetectionEvaluator
   save_key: mAP
 log:
-  interval: 50
+  interval: 10
 
 class_names: ['fire', 'smoke']
