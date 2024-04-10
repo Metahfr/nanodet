@@ -90,11 +90,11 @@ data:
 device:
   gpu_ids: [0]
   workers_per_gpu: 8
-  batchsize_per_gpu: 32
+  batchsize_per_gpu: 64
   precision: 32 # set to 16 to use AMP training
 schedule:
-  resume: True
-  load_model: workspace/nanodet-plus-m_416_fire&smoke/model_best/model_best.ckpt
+#  resume: True
+#  load_model: workspace/nanodet-plus-m_416_fire&smoke/model_best/model_best.ckpt
   optimizer:
     name: AdamW
     lr: 0.001
